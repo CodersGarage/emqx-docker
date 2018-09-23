@@ -81,7 +81,7 @@ RUN set -ex \
 RUN set -ex \
     # add latest rebar
     && echo "a"  \
-    && git clone -b ${EMQ_VERSION} https://github.com/s4kibs4mi/emq-relx.git /emqttd \
+    && git clone -b ${EMQ_VERSION} https://github.com/s4kibs4mi/emqx-rel.git /emqttd \
     && cd /emqttd \
     && make \
     && mkdir -p /opt && mv /emqttd/_rel/emqttd /opt/emqttd \
