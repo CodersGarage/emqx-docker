@@ -3,3 +3,4 @@ emq_modules.
 emq_retainer.
 emq_dashboard.
 emq_auth_http.
+emq_rest_auth.
