@@ -76,8 +76,11 @@ RUN set -ex \
         ncurses-terminfo-base \
         ncurses-terminfo \
         ncurses-libs \
-        readline \
+        readline
+
+RUN set -ex \
     # add latest rebar
+    && echo "a"  \
     && git clone -b ${EMQ_VERSION} https://github.com/s4kibs4mi/emq-relx.git /emqttd \
     && cd /emqttd \
     && make \
